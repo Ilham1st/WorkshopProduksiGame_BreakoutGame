@@ -58,9 +58,10 @@ public class Paddle {
     // This update method will be called from update in BreakoutView
     // It determines if the paddle needs to move and changes the coordinates
     // contained in rect if necessary
-    public void reset(int x){
-        rect.left = x / 2;
-        rect.right = x / 2 + length;
+    public void reset(int center){
+        rect.left = center / 2;
+        rect.right = center / 2 + length;
+        x = center / 2;
     }
 
 
